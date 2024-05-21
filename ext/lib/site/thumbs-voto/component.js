@@ -26,7 +26,7 @@ export default function ThumbsVoto(props) {
   return (
     <section className="thumbs info-landing">
       <div className="container-fluid">
-        <div className="row cont fondo-celeste">
+        <div className="row cont fondo-rosa">
           <div className="subtitulo">
             { subtitleUrl ?
               <h2 dangerouslySetInnerHTML={{__html: subtitle}} />

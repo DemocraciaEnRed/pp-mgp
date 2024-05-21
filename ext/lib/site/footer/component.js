@@ -30,9 +30,7 @@ export default class Footer  extends Component {
     <div className='container'>
       <div className='contacto-detalles'>
         <h3>CONTACTO</h3>
-        <p dangerouslySetInnerHTML={{__html: texts['footer-info']}}>
-          
-        </p>
+        <p dangerouslySetInnerHTML={{__html: texts['footer-info']}}></p>
       </div>
       <div className='social-icon'>
         <a aria-label='Ícono de facebook' className='social-facebook' tabIndex="102"  href='https://facebook.com/municipalidadmardelplata/ ' target="_blank"/>

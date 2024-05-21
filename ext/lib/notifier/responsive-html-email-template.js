@@ -7,7 +7,7 @@ const juice = require('juice');
 
 const baseUrl = utils.buildUrl(config)
 const fontFamily = 'Museo300, sans-serif'
-const colorBotones = '#C4D94B'
+const colorBotones = '#24436F'
 
 // template sacado de: https://github.com/leemunroe/responsive-html-email-template
 module.exports = ({
@@ -377,7 +377,7 @@ module.exports = ({
                       <tr>
                         <td class="align-center">
                           <p>
-                            <span style="color:#C4D94B">PRESUPUESTO PARTICIPATIVO DE LA MUNICIPALIDAD DE GENERAL PUEYRREDON</span>
+                            <span style="color:#24436F">PRESUPUESTO PARTICIPATIVO DE LA MUNICIPALIDAD DE GENERAL PUEYRREDON</span>
                             <br> <span style="color:#005e80">#PPMGP #LaCiudadQueQueremos</span>
                           </p>
                           <!-- When inserting images remember to include the following attributes or
