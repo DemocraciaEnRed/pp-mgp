@@ -10,12 +10,12 @@ const HomeForum = (props) => {
 
   switch (forum) {
     case 'propuestas':
-      years = ['2023']
+      years = ['2024']
       return <HomeCatalogo {...props} years={years} archive={false} />
     case 'acerca-de':
       return <HomeAbout {...props} />
     case 'archivo':
-      years = ['2022', '2021']
+      years = ['2023', '2022', '2021']
       return <HomeCatalogo {...props} years={years} archive={true} />
     default:
       // que nunca caiga en la vieja pantalla de proyectos
