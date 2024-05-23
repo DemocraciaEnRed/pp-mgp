@@ -86,7 +86,7 @@ export default class EncuentrosProximos extends Component {
     return (
       <div className='seccion-proximos-encuentros'>
         <div className="text-center">
-          <div className="fondo-titulo" style={{backgroundColor: '#24436F', fontFamily: 'Museo300'}}>
+          <div className="fondo-titulo" style={{backgroundColor: '#24436F', fontFamily: 'AlfabetLight'}}>
             <h3 className='subtitle'>{texts['home-encuentro-title']}</h3>
           </div>
         </div>
