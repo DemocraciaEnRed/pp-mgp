@@ -54,7 +54,7 @@
                       data-name="seguimientoNormal",
                       id='seg',
                     )
-            //.col-sm-6    
+            .col-sm-6    
               h5= ''
               .form-group
                 label.switch= 'Mostrar sección eventos'
@@ -64,19 +64,19 @@
                     id='checkboxPoints'
                   )
                   .slider.round
-              .form-group.openProposal
-                label= 'Titulo sección propuestas'
-                input.form-control.form(
-                  type='text',
-                  data-name='noticeTexto'
-                )
-              .form-group
-                label.switch= 'Mostrar formulario proyectistas'
-                  input.form(
-                    type='checkbox',
-                    data-name='mostrarFormulariosProyectistas',
-                    id='checkboxPoints'
-                  )
-                  .slider.round
+              //- .form-group.openProposal
+              //-   label= 'Titulo sección propuestas'
+              //-   input.form-control.form(
+              //-     type='text',
+              //-     data-name='noticeTexto'
+              //-   )
+              //- .form-group
+              //-   label.switch= 'Mostrar formulario proyectistas'
+              //-     input.form(
+              //-       type='checkbox',
+              //-       data-name='mostrarFormulariosProyectistas',
+              //-       id='checkboxPoints'
+              //-     )
+              //-     .slider.round
 
         .form-group: button.btn.btn-success.btn-block.btn-lg= t('settings.save')

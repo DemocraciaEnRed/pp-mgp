@@ -20,7 +20,7 @@ import textStore from 'lib/stores/text-store'
 import TypeformButton from './typeform'
 
 export default class HomeMultiforumOverride extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.state = {
@@ -29,11 +29,11 @@ export default class HomeMultiforumOverride extends Component {
     }
   }
 
-  componentWillMount () {
-    const promises=[forumStore.findOneByName('proyectos'),textStore.findAllDict()]
+  componentWillMount() {
+    const promises = [forumStore.findOneByName('proyectos'), textStore.findAllDict()]
 
     Promise.all(promises).then((results) => {
-      const [forum,textsDict] = results
+      const [forum, textsDict] = results
       this.setState({
         texts: textsDict,
         forum
@@ -45,24 +45,27 @@ export default class HomeMultiforumOverride extends Component {
     })
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.goTop()
   }
 
-  goTop () {
+  goTop() {
     Anchor.goTo('container')
   }
 
-  render () {
-    const {forum} = this.state
+  render() {
+    const { forum } = this.state
     return (
       <div className='ext-home-multiforum'>
         <Anchor id='container'>
           <BannerForoVecinal title={this.state.texts['home-title']} texts={this.state.texts} />
           {forum && <ThumbsVoto texts={this.state.texts} forum={this.state.forum} />}
-          {forum && <BannerInvitacion texts={this.state.texts}/>}
+          {forum && <BannerInvitacion texts={this.state.texts} />}
           <BannerMapaVectores />
-          <EncuentrosProximos  texts={this.state.texts}/>
+          {forum && forum.config.mostrarSeccionEventos &&
+
+            <EncuentrosProximos texts={this.state.texts} />
+          }
           <Jump goTop={this.goTop} />
           <Footer />
         </Anchor>
